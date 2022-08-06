@@ -72,9 +72,9 @@ public class Main {
         System.out.println("Разница бойцов = " + fighterMin + "кг");
 /// Task 2
         int bananasWeight = 80;
-        int milkWeight = 105 * 2;
-        int iceCreamWeight = 100 * 2;
-        int eggsWeight = 70 * 4;
+        int milkWeight = 210;
+        int iceCreamWeight = 200;
+        int eggsWeight = 280;
         int sumWeight = bananasWeight + iceCreamWeight + milkWeight + eggsWeight;
         float sumKg = sumWeight / 1000f;
         System.out.println("Сумма в граммах = " + sumWeight + " грамм " + " Сумма в килограммах = " + sumKg + "кг");
@@ -83,17 +83,19 @@ public class Main {
         short highWeight = 500;
         float lWeightKg = lowWeight / 1000f;
         float hWeightKg = highWeight / 1000f;
-        float deadlineFirst = 7 / lWeightKg;
-        float deadlineSecond = 7 / hWeightKg;
+        float deadline = 7;
+        float deadlineSecond = deadline / hWeightKg;
+        float deadlineFirst = deadline / lWeightKg;
         float middle = (deadlineFirst + deadlineSecond) / 2;
         System.out.println("Если будет сбрасывать по 500г, то через " + deadlineSecond + " дней, " + "Если по 250, то через " + deadlineFirst + " дней, " + "В среднем " + middle + " Дней" );
 /// Task 4
         int masha = 67760;
         int denis = 83690;
         int kristina = 76230;
-        int mashaPercent = (67760 * 10) / 100;
-        int denisPercent = (83690 * 10) / 100;
-        int kristinaPercent = (76230 * 10) / 100;
+        int percent = 10;
+        int mashaPercent = (67760 * percent) / 100;
+        int denisPercent = (83690 * percent) / 100;
+        int kristinaPercent = (76230 * percent) / 100;
         int mashaHigh = mashaPercent + masha;
         int denisHigh = denisPercent + denis;
         int kristinaHigh = kristinaPercent + kristina;
